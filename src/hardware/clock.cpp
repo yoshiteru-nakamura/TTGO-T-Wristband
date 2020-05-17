@@ -39,7 +39,7 @@ RTC_Date getUTCTime()
   timeStructure.tm_isdst = -1;
   if (isDST(now))
   {
-    timeStructure.tm_hour = timeStructure.tm_hour - 2;
+    timeStructure.tm_hour = timeStructure.tm_hour - 9;
   }
   else
   {
