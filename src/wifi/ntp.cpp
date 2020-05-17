@@ -7,8 +7,8 @@ NTP ntp(wifiUdp);
 
 void initNTP()
 {
-  ntp.ruleDST("CEST", Last, Sun, Mar, 2, 120);
-  ntp.ruleSTD("CET", Last, Sun, Oct, 3, 60);
+  ntp.ruleDST("CEST", Last, Sun, Mar, 2, 540); // JST(+9)=540
+  ntp.ruleSTD("CET", Last, Sun, Oct, 3, 540); // JST(+9)=540
   ntp.begin();
   ntp.update();
 }
